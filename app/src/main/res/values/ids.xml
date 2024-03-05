@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="radioAa" type="id" />
+    <item name="editFinaciamento" type="id" />
+    <item name="editTaxa" type="id" />
+    <item name="editTempo" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="lblMont" type="id" />
+    <item name="lblTotal" type="id" />
+    <item name="lblParcela" type="id" />
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="338dp"
+        android:layout_height="51dp"
+        android:text="Cálculo de juros"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <EditText
+        android:id="@+id/editFinaciamento"
+        android:layout_width="280dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Digite o valor a financiar"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTaxa"
+        android:layout_width="275dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Digite a taxa de juros"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFinaciamento" />
+
+    <EditText
+        android:id="@+id/editTempo"
+        android:layout_width="265dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Digite o total de meses"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTaxa" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="72dp"
+        android:onClick="btnSimples"
+        android:text="Simples"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="btnComposto"
+        android:text="Composto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="257dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTempo">
+
+        <RadioButton
+            android:id="@+id/radioAm"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:text="a.m"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioAa"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:text="a.a"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
